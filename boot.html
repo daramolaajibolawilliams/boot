@@ -1,0 +1,150 @@
+
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Restaurant</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <style>
+        .hero {
+            background-image: url('pexels-soo-chul-park-695483041-18054760.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        
+        }
+        body{
+            background-color:#d4529e
+            }
+        .menu-item {
+            margin: 20px 0;
+            background-color:#e278b6
+        }
+        footer {
+            background-color: #b97fa1;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header class="bg-#b97fa1">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="#">Delicious Restaurant</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   
+    <section class="hero">
+        <div>
+            <h1>Welcome to Delicious Restaurant</h1>
+            <a href="#menu" class="btn btn-dark btn-lg mt-3">View Menu</a>
+        </div>
+    </section>
+
+   
+    <section id="menu" class="container my-5">
+        <h2 class="text-center">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="pexels-enginakyurt-1437267.jpg" class="card-img-top" alt="Menu Item 1"> 
+                    <div class="card-body">
+                        <h5 class="card-title">Spaghetti Bolognese</h5>
+                        <p class="card-text">Classic Italian pasta dish with rich meat sauce.</p>
+                        <p class="font-weight-bold">$12.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="pexels-valeriya-1833333.jpg" class="card-img-top" alt="Menu Item 2"> 
+                    <div class="card-body">
+                        <h5 class="card-title">Caesar Salad</h5>
+                        <p class="card-text">Fresh romaine lettuce with Caesar dressing, croutons, and parmesan.</p>
+                        <p class="font-weight-bold">$9.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="pexels-enginakyurt-2673353.jpg" class="card-img-top" alt="Menu Item 3"> 
+                    <div class="card-body"> 
+                        <h5 class="card-title">Grilled Salmon</h5>
+                        <p class="card-text">Perfectly grilled salmon with lemon butter sauce.</p>
+                        <p class="font-weight-bold">$18.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="about" class="container my-5 br-10">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="pexels-soo-chul-park-695483041-18054760.jpg" class="img-fluid" alt="About Us"> 
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Delicious Restaurant is dedicated to serving the finest dishes with the freshest ingredients. Our chefs are passionate about creating an unforgettable dining experience for you and your loved ones. Join us for an incredible culinary journey!</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </section>
+
+    
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Delicious Restaurant. All Rights Reserved.</p>
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- 
+</head>
+<body>
+    
+</body>
+</html> -->

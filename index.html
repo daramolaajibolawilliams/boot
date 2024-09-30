@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('pexels-muhammedtubtemur-27852763.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            text-align: center;
+        }
+        body{
+            background-color: lightblue;
+        }
+        .destination-card {
+          margin-bottom: 30px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">Wanderlust Travel Agency</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+    <header class="hero">
+        <div>
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world with us</p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Start Exploring</a>
+        </div>
+    </header>
+
+    
+    <section id="destinations" class="container my-5">
+        <h2 class="text-center">Popular Destinations</h2>
+        <div class="row">
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="pexels-freestockpro-2166553.jpg" class="card-img-top" alt="Destination 1"> <!-- Replace with your image URL -->
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia</h5>
+                        <p class="card-text">A tropical paradise with stunning beaches and vibrant culture.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="pexels-pixabay-60027.jpg" class="card-img-top" alt="Destination 2"> <!-- Replace with your image URL -->
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">The city of love, known for its art, fashion, and culinary delights.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 destination-card">
+                <div class="card">
+                    <img src="pexels-apasaric-2506923.jpg" class="card-img-top" alt="Destination 3"> <!-- Replace with your image URL -->
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo, Japan</h5>
+                        <p class="card-text">A bustling metropolis blending traditional culture with modern technology.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="tours" class="container my-5">
+        <h2 class="text-center">Our Tours</h2>
+        <div class="accordion" id="toursAccordion">
+            <div class="card">
+                <div class="card-header" id="tour1Heading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tour1" aria-expanded="true" aria-controls="tour1">
+                            Beach Getaway
+                        </button>
+                    </h5>
+                </div>
+                <div id="tour1" class="collapse show" aria-labelledby="tour1Heading" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Enjoy a relaxing week at the beach with our all-inclusive package.
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="tour2Heading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#tour2" aria-expanded="false" aria-controls="tour2">
+                            Mountain Adventure
+                        </button>
+                    </h5>
+                </div>
+                <div id="tour2" class="collapse" aria-labelledby="tour2Heading" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Experience thrilling hikes and breathtaking views in the mountains.
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="tour3Heading">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#tour3" aria-expanded="false" aria-controls="tour3">
+                            Cultural Exploration
+                        </button>
+                    </h5>
+                </div>
+                <div id="tour3" class="collapse" aria-labelledby="tour3Heading" data-parent="#toursAccordion">
+                    <div class="card-body">
+                        Discover the rich history and traditions of our selected destinations.
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center">Get in Touch</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination of Interest</label>
+                <input type="text" class="form-control" id="destination">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Wanderlust Travel Agency. All Rights Reserved.</p>
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
